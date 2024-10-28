@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>INST377 - Week 5 - Lab</title>
+        <link rel="stylesheet" type="text/css" href="lab5.css">
+        <script defer src="lab.js"></script>    
+    </head>
+    <body>
+        <h1>Let's convert some currency!</h1>
+        <div class="converter">
+            <h1>Currency Converter</h1>
+            <form onsubmit="convert(fromCurrency.value, toCurrency.value, amount.value);
+            return false;">
+            <label for="fromCurrency">From Currency: </label>
+            <select id="fromCurrency" name="fromCurrency">
+            </select>
+            <br>
+            
+            <label for="toCurrency">To Currency: </label>
+            <select id="toCurrency" name="toCurrency">
+            </select>
+            <br>
+            
+            <label for="amount">Amount: </label>
+            <input type="number" id="amount" name="amount">
+            <br>
+            
+            <button id="convertBtn">Convert</button>
+
+
+         </form>
+
+         <h3 id="result">
+         </h3>
+    </body>

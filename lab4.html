@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>INST377 - Lab 4</title>
+    <link rel="stylesheet" type="text/css" href="lab4.css">
+</head>
+<body>
+    <h1>Lab 4<div id="head"></div> </h1>
+    
+<div class="grid-container">
+    <div class="alert">
+            <form onsubmit="event.preventDefault(); greeting();">
+            <label for="name">Name: </label>
+            <input type="text" id="name" required>
+            <button id="alertme">Alert Me</button>
+        </form>
+    </div>
+    <script>
+        function greeting() {
+            const nameInput = document.getElementById('name').value;
+            alert(`Hi ${nameInput}`);
+        }
+    </script>
+
+    <div class="cc">
+        <button id="colorchange" onclick="cChange()">Change Color</button>
+    </div>
+    <script>
+        function cChange() {
+            if (document.body.style.backgroundColor === 'yellow') {
+                document.body.style.backgroundColor = 'rgb(120, 120, 169)';
+            } else {
+                document.body.style.backgroundColor = 'yellow';
+            }
+        }
+    </script>
+
+
+    <div class="test">
+        <label for="test">Text Tester: </label>
+        <div><input type="text" id="test"></div>
+        <button onclick="validateT()">Validate Text</button>
+    </div>
+    <script>
+        function validateT() {
+            var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+            var inputText = document.getElementById('test').value;
+            if (validation.test(inputText)) {
+                alert('Text contains special characters');
+            } else {
+                alert('Text does not contain special characters');
+            }
+        }
+    </script>
+
+    <div class="add">
+        <button id="textAdd" onclick="headAdd()">Add Text</button> 
+    </div>
+    <script>
+        function headAdd() {
+            document.getElementById("head").textContent = 'Add Text';
+
+        }
+
+    </script>
+</div>
+</body>
+</html>

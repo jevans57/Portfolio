@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(52, 52, 118);
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+
+  }
+
+  .rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .primary {
+    float: left;
+    width: 65%;           
+    max-width: 600px;
+    margin-left: 0;
+    margin-bottom: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Rubik Wet Paint";
+
+}
+
+  .secondary{
+    float: right;
+    width: 20%;           
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: rgb(160, 147, 147);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Rubik Wet Paint";
+  }
+  
+  header {
+    background-color: grey; 
+    color: white;               
+    padding: 20px;             
+    text-align: center;        
+    font-family: "Rubik Wet Paint";
+    margin: 0px;
+   }
+   
+   nav {
+    background-color: rgb(148, 91, 91); 
+    color: white;               
+    margin-top: 15px;
+    margin-bottom: auto;
+    padding: 25px;             
+    text-align: left;        
+    font-family: "Rubik Wet Paint";
+   }
+
+  footer {
+    clear: both;
+    background-color: grey;
+    padding: 10px;
+    text-align:center;
+    margin: auto;
+    font-family: "Rubik Wet Paint";
+    
+  }
+
+  h1 {
+    color: black;
+    margin-left: 20px;
+
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    background-color: yellow;
+    font-size: 18px;
+  }
+
+  .name-input:focus {
+    width: 300px;
+  }
+
+  .primary label {
+    display: inline-block;
+}
+
+.secondary:hover {
+
+  background-color: blue;
+}
