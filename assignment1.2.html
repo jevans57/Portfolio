@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Games Page</title>
+  <link rel="stylesheet" type="text/css" href="assignment1.css">
+  <script defer src="assignment1.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>Games</h1></header>
+    <nav>
+      <a href="assignment1.1.html">Home</a>
+      <a href="assignment1.2.html">Games</a>
+      <a href="assignment1.3.html">Contact Us</a>
+    </nav>
+    <h2>Rock, Paper, Scissors</h2>
+    <form onsubmit="rps1(); return false;">
+      <div class="Game">
+        <select id="rps">
+          <option value="Rock">Rock</option>
+          <option value="Paper">Paper</option>
+          <option value="Scissors">Scissors</option>
+        </select>
+        <input type="submit" id="winner"></input>
+      </div>
+    </form>
+    <div class="flex-container">
+      <div class="choiceContainer">
+        <div class="humanChoice">
+          <p id="humanChoiceText"><b>You chose: </b></p>
+        </div>
+        <div class="computerChoice">
+          <p id="computerChoiceText"><b>Computer chose: </b></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>INST 377</h3>
+    </footer>
+  </main>
+</body>
+</html>

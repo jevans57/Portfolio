@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Contact Me</title>
+  <link rel="stylesheet" type="text/css" href="assignment1.css">
+  <script defer src="assignment1.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>Contact Me!</h1></header>
+    <nav>
+      <a href="assignment1.1.html">Home</a>
+      <a href="assignment1.2.html">Games</a>
+      <a href="assignment1.3.html">Contact Us</a>
+    </nav>
+  </main>
+  <form id="myForm" onsubmit="return validate()">
+    <div class="primary">
+      <label for="name">Name: </label>
+      <input class="name-input" id="name" required>
+      <br>
+      <label for="contact">Date:</label>
+      <input type="date" id="contact" name="contact">
+      <p><label for="textbox">Concerns: </label></p>
+      <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
